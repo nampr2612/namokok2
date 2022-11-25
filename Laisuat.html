@@ -11,15 +11,18 @@
         let inputsotienvay;
         let inputlaisuat;
         let inputsonam;
+        let inputsotienlai1nam;
+        let inputsotien;
         inputsotienvay = prompt("số tiền cần vay");
         inputlaisuat = prompt("nhập lãi suất ngân hàng %");
         inputsonam = prompt("nhập số năm vay");
-        sotienvay = inputsotienvay;
-        laisuat = inputlaisuat;
-        sonam = inputsonam;
-         let sotien= sotienvay*laisuat*sonam;
-         alert("số tiền phải trả " + sotien);
-        
+        sotienvay = Number(inputsotienvay);
+        laisuat = Number(inputlaisuat);
+        sonam = Number(inputsonam);
+        inputsotienlai1nam=sotienvay*laisuat/100;
+        inputsotien=(sotienvay+sonam*inputsotienlai1nam)
+        document.write(inputsotien)
+
    </script>
     
 </body>
